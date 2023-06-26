@@ -1,0 +1,157 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+body {
+  font-size: 15px;
+}
+
+/** Beginning of desktop media query **/
+@media screen and (min-width: 1440px) {
+  main {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  article {
+    padding: 20px 40px;
+    height: 430px;
+  }
+
+  article:nth-child(1) {
+    border-radius: 8px 0 0 8px;
+  }
+
+  article:nth-child(3) {
+    border-radius: 0 8px 8px 0;
+  }
+
+  article h3 {
+    color: white;
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  article p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Lexend Deca", cursive;
+    font-weight: lighter;
+    width: 200px;
+    margin-bottom: 55px;
+  }
+
+  article button {
+    font-family: "Lexend Deca", cursive;
+    margin-top: 45px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+  }
+
+  #first-button {
+    color: var(--bright-orange);
+  }
+
+  #second-button {
+    color: var(--dark-cyan);
+  }
+  #third-button {
+    color: var(--very-dark-cyan);
+  }
+
+  #one {
+    background-color: var(--bright-orange);
+  }
+
+  #two {
+    background-color: var(--dark-cyan);
+  }
+
+  #three {
+    background-color: var(--very-dark-cyan);
+  }
+
+  .attribution {
+    display: flex;
+    justify-content: center;
+    /* margin: 0 0 20px; */
+  }
+}
+
+/** End of desktop media query **/
+
+/** Beginning of mobile media query **/
+@media screen and (max-width: 426px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 25px 0;
+  }
+
+  article {
+    padding: 20px 30px;
+    margin: 0 15px;
+  }
+
+  article:nth-child(1) {
+    border-radius: 8px 8px 0 0;
+  }
+
+  article:nth-child(3) {
+    border-radius: 0 0 8px 8px;
+  }
+
+  article h3 {
+    color: white;
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  article p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Lexend Deca", cursive;
+    font-weight: lighter;
+    width: 200px;
+    margin-bottom: 55px;
+  }
+
+  article button {
+    font-family: "Lexend Deca", cursive;
+    margin-top: 35px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+  }
+
+  #first-button {
+    color: var(--bright-orange);
+  }
+
+  #second-button {
+    color: var(--dark-cyan);
+  }
+  #third-button {
+    color: var(--very-dark-cyan);
+  }
+
+  #one {
+    background-color: var(--bright-orange);
+  }
+
+  #two {
+    background-color: var(--dark-cyan);
+  }
+
+  #three {
+    background-color: var(--very-dark-cyan);
+  }
+}
+
+/** End of mobile media query **/
